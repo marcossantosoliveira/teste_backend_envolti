@@ -18,4 +18,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TesteBackend.application\TesteBackend.Application.csproj" />
+    <ProjectReference Include="..\TesteBackend.Infra\TesteBackend.Infra.csproj" />
+  </ItemGroup>
+
 </Project>
