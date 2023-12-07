@@ -8,9 +8,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<>(
-    options => options.UseSqlServer(
-        "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=tarefa;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"));
+//builder.Services.AddDbContext<>(
+//    options => options.UseSqlServer(
+//        "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=tarefa;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"));
 
 var app = builder.Build();
 
