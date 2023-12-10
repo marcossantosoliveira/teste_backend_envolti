@@ -4,14 +4,164 @@
     "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\TesteBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\TesteBackend.csproj": {
+    "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.application\\TesteBackend.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\TesteBackend.csproj",
-        "projectName": "TesteBackend",
-        "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\TesteBackend.csproj",
+        "projectUniqueName": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.application\\TesteBackend.Application.csproj",
+        "projectName": "TesteBackend.Application",
+        "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.application\\TesteBackend.Application.csproj",
         "packagesPath": "C:\\Users\\visitante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\obj\\",
+        "outputPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\visitante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\visitante\\source\\repos\\Pacotes Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj": {
+                "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain.Services\\TesteBackend.Domain.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain.Services\\TesteBackend.Domain.Services.csproj",
+        "projectName": "TesteBackend.Domain.Services",
+        "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain.Services\\TesteBackend.Domain.Services.csproj",
+        "packagesPath": "C:\\Users\\visitante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\visitante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\visitante\\source\\repos\\Pacotes Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj": {
+                "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj",
+        "projectName": "TesteBackend.Domain",
+        "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj",
+        "packagesPath": "C:\\Users\\visitante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -48,7 +198,175 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[12.2.0, )"
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Infra\\TesteBackend.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Infra\\TesteBackend.Infra.csproj",
+        "projectName": "TesteBackend.Infra",
+        "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Infra\\TesteBackend.Infra.csproj",
+        "packagesPath": "C:\\Users\\visitante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\visitante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\visitante\\source\\repos\\Pacotes Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj": {
+                "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain\\TesteBackend.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\TesteBackend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\TesteBackend.csproj",
+        "projectName": "TesteBackend",
+        "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\TesteBackend.csproj",
+        "packagesPath": "C:\\Users\\visitante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\visitante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\visitante\\source\\repos\\Pacotes Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.application\\TesteBackend.Application.csproj": {
+                "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.application\\TesteBackend.Application.csproj"
+              },
+              "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain.Services\\TesteBackend.Domain.Services.csproj": {
+                "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Domain.Services\\TesteBackend.Domain.Services.csproj"
+              },
+              "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Infra\\TesteBackend.Infra.csproj": {
+                "projectPath": "C:\\Users\\visitante\\source\\repos\\TesteBackend\\TesteBackend.Infra\\TesteBackend.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
