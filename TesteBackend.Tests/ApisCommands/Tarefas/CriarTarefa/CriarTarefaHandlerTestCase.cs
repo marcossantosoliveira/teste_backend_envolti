@@ -18,7 +18,7 @@ namespace TesteBackend.Tests.ApisCommands.Tarefas.CriarTarefa
 
 
         [Fact]
-        public void CriarTarefaComSucesso()
+        public async void CriarTarefaComSucesso()
         {
             using (var cts = new CancellationTokenRegistration())
             {
@@ -43,13 +43,79 @@ namespace TesteBackend.Tests.ApisCommands.Tarefas.CriarTarefa
 
                 var criarTarefaHandler = new CriarTarefaHandler(criarTarefaServiceMock.Object);
 
-                var tarefaResponse =  criarTarefaHandler.Handle(criarTarefa, cts.Token);
+                var tarefaResponse = await criarTarefaHandler.Handle(criarTarefa, cts.Token);
 
                 Assert.NotNull(tarefaResponse);
-                
+                Assert.Equal(tarefaResponse.Mensagem, "Tarefa cadastrada com sucesso");
+            }
+
+        }
+
+        [Fact]
+        public async void CriarTarefaComErro()
+        {
+            using (var cts = new CancellationTokenRegistration())
+            {
+
+                var criarTarefaServiceMock = new Mock<TarefaService>();
+
+                var tarefaDto = new TarefaDto();
+                tarefaDto.Titulo = "teste";
+                tarefaDto.Concluida = true;
+
+
+
+                criarTarefaServiceMock.Setup(s => s.CriarTarefaAsync(
+                    tarefaDto
+                    )).ReturnsAsync(null);
+
+                var criarTarefa = new CriarTarefaRequestDto()
+                {
+                    Titulo = "teste",
+                    Concluida = true
+                };
+
+                var criarTarefaHandler = new CriarTarefaHandler(criarTarefaServiceMock.Object);
+
+                var tarefaResponse = await criarTarefaHandler.Handle(criarTarefa, cts.Token);
+
+                Assert.NotNull(tarefaResponse);
+                Assert.Equal(tarefaResponse.Mensagem, "Erro ao criar tarefa");
 
             }
 
+        }
+
+        [Fact]
+        public async void CriarTarefaComRequestVazio()
+        {
+            using (var cts = new CancellationTokenRegistration())
+            {
+
+                var criarTarefaServiceMock = new Mock<TarefaService>();
+
+                var tarefaDto = new TarefaDto();
+                tarefaDto.Titulo = "teste";
+                tarefaDto.Concluida = true;
+
+
+
+                criarTarefaServiceMock.Setup(s => s.CriarTarefaAsync(
+                    tarefaDto
+                    )).ReturnsAsync(null);
+
+                var criarTarefa = new CriarTarefaRequestDto()
+                {
+                };
+
+                var criarTarefaHandler = new CriarTarefaHandler(criarTarefaServiceMock.Object);
+
+                var tarefaResponse = await criarTarefaHandler.Handle(criarTarefa, cts.Token);
+
+                Assert.NotNull(tarefaResponse);
+                Assert.Equal(tarefaResponse.Mensagem, "Todos os campos são obrigatório");
+
+            }
 
         }
     }

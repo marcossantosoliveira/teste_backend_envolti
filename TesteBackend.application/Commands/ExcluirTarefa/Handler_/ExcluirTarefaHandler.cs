@@ -19,19 +19,13 @@ namespace TesteBackend.Application.Commands.CriarTarefa.Handler_
         {       
          
             var tarefaResponse = new ExcluirTarefaResponseDto();
-
-            if (request == null)
-            {
-                tarefaResponse.Mensagem = "Todos os campos são obrigatório";
-
-                return tarefaResponse;
-            }                        
+                                  
       
             var tarefaRetornoService = await _tarefaService.ExcluirTarefaAsync(request.Id);
 
             if (!tarefaRetornoService)
             {
-                tarefaResponse.Mensagem = "Não foi possivel excluir tarefa";
+                tarefaResponse.Mensagem = "Não é possivel excluir tarefa que não foi concluida";
 
                 return tarefaResponse;
             }
