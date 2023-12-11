@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="xunit" Version="2.6.3" />
+    <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+    <PackageReference Include="xunit.core" Version="2.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TesteBackend.application.Services\TesteBackend.Application.Services.csproj" />
+    <ProjectReference Include="..\TesteBackend.application\TesteBackend.Application.csproj" />
+    <ProjectReference Include="..\TesteBackend.Domain.Services\TesteBackend.Domain.Services.csproj" />
+    <ProjectReference Include="..\TesteBackend.Domain\TesteBackend.Domain.csproj" />
+    <ProjectReference Include="..\TesteBackend.Infra\TesteBackend.Infra.csproj" />
+    <ProjectReference Include="..\TesteBackend\TesteBackend.csproj" />
+  </ItemGroup>
+
+</Project>

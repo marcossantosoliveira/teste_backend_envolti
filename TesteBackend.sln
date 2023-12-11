@@ -9,19 +9,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - API", "1 - API", "{0EC2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{84E2EC0D-C3B8-49D4-A226-2442B10DB8DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteBackend.Application", "TesteBackend.application\TesteBackend.Application.csproj", "{0A4E289E-26B1-4356-B381-C0781F1DB193}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteBackend.Application", "TesteBackend.application\TesteBackend.Application.csproj", "{0A4E289E-26B1-4356-B381-C0781F1DB193}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteBackend.Application.Services", "TesteBackend.application.Services\TesteBackend.Application.Services.csproj", "{4463BFE7-1B55-4FFE-B37C-01DEDC4B48DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteBackend.Application.Services", "TesteBackend.application.Services\TesteBackend.Application.Services.csproj", "{4463BFE7-1B55-4FFE-B37C-01DEDC4B48DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{81305F7D-B73E-4C7C-B63A-5C657336DE7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteBackend.Domain", "TesteBackend.Domain\TesteBackend.Domain.csproj", "{C2B1897A-F616-429A-8D2D-F0583918B8EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteBackend.Domain", "TesteBackend.Domain\TesteBackend.Domain.csproj", "{C2B1897A-F616-429A-8D2D-F0583918B8EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteBackend.Domain.Services", "TesteBackend.Domain.Services\TesteBackend.Domain.Services.csproj", "{50952348-12E6-4478-9E52-3214EAC78B84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteBackend.Domain.Services", "TesteBackend.Domain.Services\TesteBackend.Domain.Services.csproj", "{50952348-12E6-4478-9E52-3214EAC78B84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{BE3A2DAC-9DE6-44AE-ACFF-F7860E496A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteBackend.Infra", "TesteBackend.Infra\TesteBackend.Infra.csproj", "{8265942D-6F3C-4122-839E-C128E2E76CD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteBackend.Infra", "TesteBackend.Infra\TesteBackend.Infra.csproj", "{8265942D-6F3C-4122-839E-C128E2E76CD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{330005C8-A015-43D8-9844-5A243DD64CF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteBackend.Tests", "TesteBackend.Tests\TesteBackend.Tests.csproj", "{D3AEB179-A509-4D0A-82CD-A2D077999B41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,10 @@ Global
 		{8265942D-6F3C-4122-839E-C128E2E76CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8265942D-6F3C-4122-839E-C128E2E76CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8265942D-6F3C-4122-839E-C128E2E76CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3AEB179-A509-4D0A-82CD-A2D077999B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3AEB179-A509-4D0A-82CD-A2D077999B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3AEB179-A509-4D0A-82CD-A2D077999B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3AEB179-A509-4D0A-82CD-A2D077999B41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{C2B1897A-F616-429A-8D2D-F0583918B8EF} = {81305F7D-B73E-4C7C-B63A-5C657336DE7D}
 		{50952348-12E6-4478-9E52-3214EAC78B84} = {81305F7D-B73E-4C7C-B63A-5C657336DE7D}
 		{8265942D-6F3C-4122-839E-C128E2E76CD3} = {BE3A2DAC-9DE6-44AE-ACFF-F7860E496A8B}
+		{D3AEB179-A509-4D0A-82CD-A2D077999B41} = {330005C8-A015-43D8-9844-5A243DD64CF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {492AB68C-23D1-404A-AE89-EA31FAA49DAC}

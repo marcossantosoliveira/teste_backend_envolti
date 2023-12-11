@@ -28,7 +28,7 @@ namespace TesteBackend.Application.Commands.CriarTarefa.Handler_
 
             if (request == null)
             {
-                tarefaResponse.menssagem = "Todos os campos são obrigatório";
+                tarefaResponse.Mensagem = "Todos os campos são obrigatório";
 
                 return tarefaResponse;
             }
@@ -40,12 +40,12 @@ namespace TesteBackend.Application.Commands.CriarTarefa.Handler_
 
             if (tarefaRetornoService ==  null)
             {
-                tarefaResponse.menssagem = "Erro ao criar tarefa";
+                tarefaResponse.Mensagem = "Erro ao criar tarefa";
 
                 return tarefaResponse;
             }
 
-            tarefaResponse.menssagem = "Tarefa cadastrada com sucesso";
+            tarefaResponse.Mensagem = "Tarefa cadastrada com sucesso";
             tarefaResponse.Id = tarefaRetornoService;
 
             return tarefaResponse;

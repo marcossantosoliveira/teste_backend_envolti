@@ -24,7 +24,7 @@ namespace TesteBackend.Infra.Repository
 
         public async Task<List<TarefaEntities>> BuscarTarefasAsync()
         {
-            var tarefas = await _tarefaContext.Tarefas.ToListAsync();
+            var tarefas = await _tarefaContext.Tarefas.Where(w=> !w.Concluida).ToListAsync();
 
             return tarefas;
         }
@@ -44,15 +44,21 @@ namespace TesteBackend.Infra.Repository
             return tarefa.Id;
         }
 
-        public async Task<TarefaEntities> EditarTarefaAsync(int id, TarefaEntities tarefa)
+        public async Task<bool> EditarTarefaAsync(int id, TarefaEntities tarefa)
         {
-            tarefa = await BuscarTarefasPorIdAsync(id);
+            var editarTarefa = await BuscarTarefasPorIdAsync(id);
 
+            if (!editarTarefa.Concluida)
+            {
 
-            _tarefaContext.Tarefas.Update(tarefa);
-            _tarefaContext.SaveChanges();
+                _tarefaContext.Tarefas.Update(tarefa);
+                _tarefaContext.SaveChanges();
 
-            return tarefa;
+                return true;
+
+            }
+
+            return false;
 
         }
 
@@ -60,7 +66,7 @@ namespace TesteBackend.Infra.Repository
         {
             var excluirTarefa = await BuscarTarefasPorIdAsync(id);
 
-            if (excluirTarefa != null)
+            if (excluirTarefa.Concluida)
             {
                 _tarefaContext.Tarefas.Remove(excluirTarefa);
                 _tarefaContext.SaveChanges();

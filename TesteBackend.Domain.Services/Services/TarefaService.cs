@@ -23,12 +23,14 @@ namespace TesteBackend.Domain.Services.Services
 
             foreach (var item in tarefasRepo)
             {
-                foreach (var itemTarefa in tarefas)
+                var tarefaItem = new TarefaResponseDto
                 {
-                    itemTarefa.Id = item.Id;
-                    itemTarefa.Titulo = item.Titulo;
-                    itemTarefa.Concluida = item.Concluida;
-                }
+                    Id = item.Id,
+                    Titulo = item.Titulo,
+                    Concluida = item.Concluida
+                };
+
+                tarefas.Add(tarefaItem);
             }
 
             return tarefas;
@@ -59,22 +61,17 @@ namespace TesteBackend.Domain.Services.Services
             return tarefaId;
         }
 
-        public async Task<TarefaResponseDto> EditarTarefaAsync(int id, TarefaDto tarefa)
+        public async Task<bool> EditarTarefaAsync(int id, TarefaDto tarefa)
         {
-            var tarefaEnti = new TarefaEntities();
-            var tarefaResponse = new TarefaResponseDto();
+            var tarefaEnti = new TarefaEntities();          
 
             tarefaEnti.Id = tarefa.Id;
             tarefaEnti.Titulo = tarefa.Titulo;
             tarefaEnti.Concluida = tarefa.Concluida;
 
-            var tarefaRepo = await _tarefaRepository.EditarTarefaAsync(id, tarefaEnti);
+            var tarefaRepo = await _tarefaRepository.EditarTarefaAsync(id, tarefaEnti);            
 
-            tarefaResponse.Id = tarefaRepo.Id;
-            tarefaResponse.Titulo = tarefaRepo.Titulo;
-            tarefaResponse.Concluida = tarefaRepo.Concluida;
-
-            return tarefaResponse;
+            return tarefaRepo;
         }
 
         public async Task<bool> ExcluirTarefaAsync(int id)

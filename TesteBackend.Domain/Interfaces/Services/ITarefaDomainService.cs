@@ -12,7 +12,7 @@ namespace TesteBackend.Domain.Interfaces.Services
         Task<List<TarefaResponseDto>> BuscarTarefasAsync();
         Task<TarefaResponseDto> BuscarTarefasPorIdAsync(int id);
         Task<int> CriarTarefaAsync(TarefaDto tarefa);
-        Task<TarefaResponseDto> EditarTarefaAsync(int id, TarefaDto tarefa);
+        Task<bool> EditarTarefaAsync(int id, TarefaDto tarefa);
         Task<bool> ExcluirTarefaAsync(int id);
 
     }

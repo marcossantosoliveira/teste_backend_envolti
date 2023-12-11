@@ -9,7 +9,7 @@ namespace TesteBackend.Domain.Interfaces.Repository
         Task<List<TarefaEntities>> BuscarTarefasAsync();
         Task<TarefaEntities> BuscarTarefasPorIdAsync(int id);
         Task<int> CriarTarefaAsync(TarefaEntities tarefa);
-        Task<TarefaEntities> EditarTarefaAsync(int id, TarefaEntities tarefa);
+        Task<bool> EditarTarefaAsync(int id, TarefaEntities tarefa);
         Task<bool> ExcluirTarefaAsync(int id);
 
     }

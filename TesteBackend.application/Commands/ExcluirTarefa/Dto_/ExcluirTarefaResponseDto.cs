@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TesteBackend.Application.Commands.CriarTarefa.Dto_
+namespace TesteBackend.Application.Commands.ExcluirTarefa.Dto_
 {
-    public class CriarTarefaResponseDto
-    {
-        public int Id { get; set; }
+    public class ExcluirTarefaResponseDto
+    {    
         public string Mensagem { get; set; }
     }
 }
